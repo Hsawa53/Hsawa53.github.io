@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+html{
+
+scroll-behavior: smooth;
+
+}
+
+
+body {
+     
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin: 0;
+
+}
+
+.color-t{ color: rgb(23, 26, 36);}
+
+button{
+
+font-size: 1.2em;
+font-weight: bold;
+padding: 15px 50px;
+border-radius: 7px;
+border: 2px solid rgb(0,0,0,0,5);
+box-shadow: 2px 2px 10px rgba(0,0,0,0,5);
+color:white;
+background-color:rgb(23,26, 36) ;
+
+}
+button:hover{
+    background-color:rgb(202, 81, 81) ;
+
+}
+
+
+.container{
+
+max-width: 1400px;
+margin: auto;
+
+}
+
+header{
+    color: aliceblue;
+background-color: rgb(23,26,33);
+font-size: 1.4em;
+padding: 15px 15px;
+
+}
+
+header.logo{
+    margin: 0;
+    padding: 15px 15px;
+    
+
+}
+
+header.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+ 
+   display: flex;
+   flex-direction:row;
+   text-align: right;
+
+}
+
+header a{
+
+padding: 5px 13px;
+text-decoration: none;
+font-weight: bold;
+color: rgb(241, 241, 241);
+
+}
+
+header a:hover{
+color: rgb(202, 81, 81);
+
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: linear-gradient(to right, transparent, rgb(37, 37, 37))
+    ,
+    url("media/PRINCIPAL.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#quees{
+background-color: rgb(228, 228, 228);
+text-align: center;
+padding: 20px 12px;
+color: rgb(0, 0, 0);
+}
+#quees .container{
+padding: 200px 12px;
+}
+
+#videos{
+
+    background-color: rgb(23,26,36);
+color: white;
+text-align: center;
+}
+
+
+#videos .container{
+    padding: 120px 12px;
+}
+
+#videos p{
+display: none;
+
+}
+
+#videos .video{
+color: rgb(228, 228, 228);
+padding: 50px;
+margin: 20px;
+background-position: center center;
+background-size: cover;
+border-radius: 12px;
+}
+
+.video:first-child{
+
+    background-image: linear-gradient(to right, 
+    transparent, rgba(23, 26, 36, 0.658)),
+    url("media/CS-GO-Source-2-inferno.jpg");
+
+}
+
+.video:nth-child(2){
+
+    background-image: linear-gradient(to right, 
+    transparent, rgba(23, 26, 36, 0.664)),
+    url("media/GRENADE.JPG");
+    
+
+}
+
+.video:nth-child(3){
+
+    background-image: linear-gradient(to right, 
+    transparent, rgba(23, 26, 36, 0.658)),
+    url("media/DRAGON.jpg");
+  
+    
+}
+
+#descargar{
+    background-color: rgb(228, 228, 228);
+}
+  
+#descargar .container{
+padding: 300px 12px;
+color: rgb(20, 20, 20);
+text-align: center;
+
+
+}
+
+#descargar li{
+
+   margin: 12px 3px;
+   font-weight: bold;
+
+}
+
+footer{
+
+color: white;
+background-color: black;
+padding: 20px 0px;
+justify-content: center;
+align-items: flex-end;
+}
+
+@media (min-width:720px ){
+
+     header{
+     position:fixed;
+     width: 100%;
+
+
+     }
+     
+     header .container{ 
+     flex-direction: row;
+
+     }
+     header .nav{
+
+        flex-direction: row;
+     }
+
+     #quees .container{
+        justify-content: center;
+        display:flex;
+     }
+    #quees .img-container{
+        background-image:
+        url("media/csgo-ace.gif");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 750px;
+
+
+    }
+     
+    #quees .texto{
+      width:50%;
+      text-align: center;
+      padding: 0px 30px;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+     #videos .container{
+       
+     display:flex;
+     justify-content: center;
+     
+     }
+
+    #videos p{
+
+    
+     margin-bottom: 30px;
+    }
+    #videos .video{
+      padding: 50px;
+      width: 500px;
+      height: 350px;
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+
+}
